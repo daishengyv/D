@@ -17,23 +17,15 @@
   <!-- <link rel="apple-touch-icon" href="favicon.ico"> -->
   <link rel="shortcut icon" href="favicon.ico">
   <!-- Place favicon.ico in the root directory -->
-
+  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/115154/45558/5aa51f89f629d91080105556.css' rel='stylesheet' type='text/css'
+  />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/template.min.css">
-  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/115154/45558/5aa51f89f629d91080105556.css' rel='stylesheet' type='text/css'
-  />
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script type="text/javascript" src="js/zturn.js"></script>
-
-
-
-
-
-
-
 </head>
 
 <body>
@@ -51,6 +43,9 @@
         <span>Joker</span>
         <span>'s &nbsp; resume </span>
       </a>
+    </div>
+    <div id="yy">
+      <audio src=""></audio>
     </div>
     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
       <div class="swiper-slide swiper-slide-active ani-slide" style="height: 100%;">
@@ -92,12 +87,12 @@
         </div>
       </div>
       <div class="swiper-slide" style="height: 300px;">
-        
-       
-          <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
         <div id="main-e" style="width: 1000px;height:600px;"></div>
 
-      
+
       </div>
       <div class="swiper-slide" style="height: 300px;">
         <ul>
@@ -170,8 +165,8 @@
                   <div class="students_star">
 
                     <div class="zwjs">
-                      基本展示了我所掌握的技术，用到了Swiper模板搭建的框架，Bootstrap组件，jQuery，原生JS。 首页背景为Canvas画板，还应用了大量的Css3样式。 UI界面来源于网络，非常感谢设计者。差不多用了3天的时间，从找素材，插件，样式，上线，
-                      可能有些BUG没有发现。
+                      基本展示了我所掌握的技术，用到了Swiper模板搭建的框架，Bootstrap组件，jQuery，原生JS。 首页背景为Canvas画板，还应用了大量的Css3样式。 UI界面来源于网络，非常感谢设计者。
+
                     </div>
                   </div>
                 </li>
@@ -278,23 +273,59 @@
       </div>
       <div class="swiper-slide" style="height: 300px;">
         <ul>
-          <li><p>CONTACT FOR ME</p></li>
-          <li><p><span>&nbsp;</span></p></li>
-          <li><p><em>灵感</em><em>代码</em><em>理想</em><em>未来</em></p></li>
-          <li><p>
-              学习是一个充实愉悦的过程 <br/>
-              喜欢尝试，期待新鲜事物  <br/>
-              前端即兴趣，兴趣即未来 <br/>
-              行路有良友，便是捷径 <br/>
-              期待有机会与您共事！ <br/>
-          </p></li> 
           <li>
-            <span><a href="https://github.com/daishengyv" target='_blank'><img src="./img/github.png" width="24"></a><em>GitHub</em></span>
-            <span><img src="./img/lx.png" width="24"> <em>SHOW_dao@qq.com</em></span>
-            <span><img src="./img/QQ.png" width="24"> <em></em></span>
-            <span><img src="./img/wx.png" width="24"> <em></em></span>
-            <span><img src="./img/wb.png" width="24"> <em>Weibo</em></span>
-            <span><img src="./img/zh.png" width="24"> <em>Zhihu</em></span>
+            <p>CONTACT FOR ME</p>
+          </li>
+          <li>
+            <p>
+              <span>&nbsp;</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>灵感</em>
+              <em>代码</em>
+              <em>理想</em>
+              <em>未来</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              学习是一个充实愉悦的过程
+              <br/> 喜欢尝试，期待新鲜事物
+              <br/> 前端即兴趣，兴趣即未来
+              <br/> 行路有良友，便是捷径
+              <br/> 期待有机会与您共事！
+              <br/>
+            </p>
+          </li>
+          <li>
+            <span>
+              <a href="https://github.com/daishengyv" target='_blank'>
+                <img src="./img/github.png" width="24">
+              </a>
+              <em>GitHub</em>
+            </span>
+            <span>
+              <img src="./img/lx.png" width="24">
+              <em>SHOW_dao@qq.com</em>
+            </span>
+            <span>
+              <img src="./img/QQ.png" width="24">
+              <em></em>
+            </span>
+            <span>
+              <img src="./img/wx.png" width="24">
+              <em></em>
+            </span>
+            <span>
+              <img src="./img/wb.png" width="24">
+              <em>Weibo</em>
+            </span>
+            <span>
+              <img src="./img/zh.png" width="24">
+              <em>Zhihu</em>
+            </span>
           </li>
         </ul>
       </div>
@@ -321,6 +352,7 @@
       mousewheel: true,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
       on: {
         init: function (swiper) {
@@ -340,8 +372,6 @@
         },
       }
     });
-
-
 
   </script>
 

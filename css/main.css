@@ -398,7 +398,20 @@ transition-delay:0.3s;
 #logo span:nth-of-type(2):hover{
     color:#044bb6
 }
-
+#yy{
+    position: fixed;
+    top:22%;
+    right: 39px;
+    z-index: 100;
+    width: 280px;
+    height: 60px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    background:rgba(255,255,255,.4);
+    overflow: hidden;
+    padding: 0 10px;
+    cursor: pointer;
+}
 
 @keyframes  mymove{
     0% {
@@ -717,4 +730,14 @@ img{border:none}
   body .swiper-wrapper em,
   body .swiper-wrapper i{
     display: inline-block;
+}
+
+
+#yy{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: springgreen;
+    position: absolute;
+
 }

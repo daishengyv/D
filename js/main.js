@@ -6,38 +6,40 @@ $(function (){
 
         this.style['box-shadow'] = '-2px -5px 30px 5px rgba(255,255,255,0.5)';
 
+
+        document.addEventListener('mousemove', function (e){
+            // if(e.target.id != 'dai') return;
+    
+    
+            let d = document.getElementById('dai');
+    
+    
+            let l = d.offsetLeft;
+            let t = d.offsetTop;
+            let w = d.offsetWidth/2;
+            let h = d.offsetHeight/2;
+            let x = (e.pageX - l - w)*0.15;
+            let y = (e.pageY  - t - h)*0.15;
+            let ld = 0;
+            let td = 0;
+            ld = (e.pageX - l - w)/w*10;
+            td = (e.pageY  - t - h)/h*10;
+    
+           $('#dai').css({
+        
+            'transform': 'scale(1.03) translate('+ x + 'px,' + y + 'px)' + 'rotateX('  +  ld+  'deg) rotateY(' + td + 'deg)'
+           })
+    
+        
+    
+            console.log(e.target);
+        });
+    
+
     })
 
 
-    document.addEventListener('mousemove', function (e){
-        if(e.target.id != 'dai') return;
-
-
-        let d = document.getElementById('dai');
-
-
-        let l = d.offsetLeft;
-        let t = d.offsetTop;
-        let w = d.offsetWidth/2;
-        let h = d.offsetHeight/2;
-        let x = (e.pageX - l - w)*0.15;
-        let y = (e.pageY  - t - h)*0.15;
-        let ld = 0;
-        let td = 0;
-        ld = (e.pageX - l - w)/w*10;
-        td = (e.pageY  - t - h)/h*10;
-
-       $('#dai').css({
-    
-        'transform': 'scale(1.03) translate('+ x + 'px,' + y + 'px)' + 'rotateX('  +  ld+  'deg) rotateY(' + td + 'deg)'
-       })
-
-    //    rotateX( ' + e.pageX * 0.01 + 'deg) rotateY('+e.pageY * 0.01+'deg)
-
-
-        console.log(e.pageX,e.pageY,l,t,w,h);
-    });
-
+  
     
     document.addEventListener('mouseout', function (e){
 
