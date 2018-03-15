@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "华文彩云";
+  src: url("华文彩云.woff2") format("woff2"),
+       url("华文彩云.woff") format("woff"),
+       url("华文彩云.ttf") format("truetype"),
+       url("华文彩云.eot") format("embedded-opentype"),
+       url("华文彩云.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "迷你简行楷_downcc";
+  src: url("迷你简行楷_downcc.woff2") format("woff2"),
+       url("迷你简行楷_downcc.woff") format("woff"),
+       url("迷你简行楷_downcc.ttf") format("truetype"),
+       url("迷你简行楷_downcc.eot") format("embedded-opentype"),
+       url("迷你简行楷_downcc.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
