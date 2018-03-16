@@ -241,11 +241,11 @@ window.onload = function () {
   }
   $(window).resize(function () {fixHeight();}).resize();
 }
-var $pagew = document.getElementById('pagewrap');
-setTimeout(function () {
-  loaderB.hide();
-  setTimeout(function () {
-    $pagew.style.transform = 'scale(0)';
-    setTimeout(function () { $pagew.style.display = 'none'; }, 400);
-  }, 400);
-}, 2000);
+// var $pagew = document.getElementById('pagewrap');
+// setTimeout(function () {
+//   loaderB.hide();
+//   setTimeout(function () {
+//     $pagew.style.transform = 'scale(0)';
+//     setTimeout(function () { $pagew.style.display = 'none'; }, 400);
+//   }, 400);
+// }, 2000);
