@@ -93,8 +93,8 @@ textarea {
         text-shadow: none !important;
     }
 
-   
-  
+
+
 
     a[href]:after {
         content: " (" attr(href) ")";
@@ -332,7 +332,7 @@ transition-delay:0.3s;
     text-align:center;
 }
 .swiper-slide .first-pag h2{
-    font-size: 75px; 
+    font-size: 75px;
 }
 .swiper-slide .first-pag li:nth-child(5) p {
     color:rgba(247, 14, 177, 0.8);
@@ -566,12 +566,12 @@ border-left:8px solid rgb(255, 231, 0);
     border-width: 6px;
     border-style: solid;
     border-color: #86ee10 transparent transparent  transparent;
-    
+
   }
   .swiper-wrapper .swiper-slide:nth-of-type(6) ul li:nth-of-type(5) span:hover  {
     background-color: #86ee10;
    }
- 
+
   .swiper-wrapper .swiper-slide:nth-of-type(6) ul li:nth-of-type(5) span:hover em {
    display: inline-block;
   }
@@ -616,3 +616,13 @@ border-left:8px solid rgb(255, 231, 0);
 
 
 
+/* jjjjjjjjjjjjjjj */
+
+
+.pageload-overlay{position:fixed}.pageload-overlay.show{visibility:visible}.pageload-overlay svg{position:absolute;top:0;left:0;pointer-events:none}.pageload-overlay svg path{fill:#fff}
+
+.pageload-overlay::after,.pageload-overlay::before{content:'';position:fixed;width:20px;height:20px;top:50%;left:50%;margin:-10px 0 0 -10px;border-radius:50%;visibility:hidden;opacity:0;z-index:1000;-webkit-transition:opacity .15s,visibility 0s .15s;transition:opacity .15s,visibility 0s .15s}.pageload-overlay::after{background:#6cc88a;-webkit-transform:translateX(-20px);transform:translateX(-20px);-webkit-animation:moveRight .6s linear infinite alternate;animation:moveRight .6s linear infinite alternate}.pageload-overlay::before{background:#4fc3f7;-webkit-transform:translateX(20px);transform:translateX(20px);-webkit-animation:moveLeft .6s linear infinite alternate;animation:moveLeft .6s linear infinite alternate}
+
+
+@-webkit-keyframes moveRight{to{-webkit-transform:translateX(20px)}}@keyframes moveRight{to{transform:translateX(20px)}}@-webkit-keyframes moveLeft{to{-webkit-transform:translateX(-20px)}}@keyframes moveLeft{to{transform:translateX(-20px)}}.pageload-loading.pageload-overlay::after,.pageload-loading.pageload-overlay::before{opacity:1;visibility:visible;-webkit-transition:opacity .3s;transition:opacity .3s}#pagewrap{position:absolute;z-index:300;background:#4fc3f7;transition:1s}
+.pageload-overlay{width:100%;height:100%;top:0;left:0}

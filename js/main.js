@@ -202,6 +202,11 @@ window.onload = function () {
     }
   });
 
+  $('#dai').one('mousemove',function (){
+    this.style['box-shadow'] = '-2px -5px 30px 5px rgba(255,255,255,0.5)';
+    document.addEventListener('mousemove', _dai);
+  });
+
   $('#dai').hover(function () {
     this.style['box-shadow'] = '-2px -5px 30px 5px rgba(255,255,255,0.5)';
     document.addEventListener('mousemove', _dai);
