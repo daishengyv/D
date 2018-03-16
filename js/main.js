@@ -198,7 +198,7 @@ window.onload = function () {
     if (typeof WeixinJSBridge == "object") {
       WeixinJSBridge.invoke("getNetworkType", {}, function (j) {
         audio.play();
-      })
+      });
     }
   });
 
@@ -228,32 +228,24 @@ window.onload = function () {
 
     $('#dai').css({
       'transform': 'scale(1.03) translate(' + x + 'px,' + y + 'px)' + 'rotateX(' + ld + 'deg) rotateY(' + td + 'deg)'
-    })
+    });
   }
-
   $('.poster-item').hover(function () {
     $(this.children).filter('.students_star').slideDown(1000);
   }, function () {
     $(this.children).filter('.students_star').slideUp(1000);
   });
-
   function fixHeight() {
     var headerHeight = $("#switcher").height();
     $("#iframe").attr("height", $(window).height() + "px");
   }
-
-  $(window).resize(function () {
-    fixHeight();
-  }).resize();
-
-  var $pagew = document.getElementById('pagewrap');
-
-  setTimeout(function () {
-    loaderB.hide();
-    setTimeout(function () {
-      $pagew.style.transform = 'scale(0)';
-      setTimeout(function () { $pagew.style.display = 'none'; }, 400);
-    }, 500);
-  }, 500);
+  $(window).resize(function () {fixHeight();}).resize();
 }
-
+var $pagew = document.getElementById('pagewrap');
+setTimeout(function () {
+  loaderB.hide();
+  setTimeout(function () {
+    $pagew.style.transform = 'scale(0)';
+    setTimeout(function () { $pagew.style.display = 'none'; }, 400);
+  }, 400);
+}, 2000);
