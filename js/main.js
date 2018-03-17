@@ -4,7 +4,7 @@ var dtimer = setInterval(function (){
 if(!darr.length){setTimeout(function (){var lD = document.getElementById('loadD');lD.style.transform='scale(0)';setTimeout(function (){ document.getElementById('loadD').style.display='none'},1000);},2000);
 return clearInterval(dtimer); }
   var span = document.createElement('span');span.innerHTML = darr.shift();span.style.color = 'rgb(' +~~(Math.random()*255) + ','+ ~~(Math.random()*255)  + ',' + ~~(Math.random()*255)  + ')'; document.getElementById('loadD').firstElementChild.appendChild(span);
-},170);
+},280);
 
 
 /*! modernizr 3.5.0 (Custom Build) | MIT *
