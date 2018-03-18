@@ -1,4 +1,4 @@
-var dstr = '    您好，我叫代生宇，24岁，坐标北京。欢迎来到我的自我介绍页面，页面自己单独开发，可能有点粗糙，望您通过浏览本网页，能对我有所了解。本人喜欢钻研，不浮躁，喜欢前端，执行力，学习能力都棒棒哒！希望能与您合作！';
+var dstr = '    您好，我叫代生宇，24岁，坐标北京。欢迎来到我的自我介绍页面，页面自己单独开发，可能有点粗糙，望您通过浏览本网页，对我有所了解。本人喜欢钻研，不浮躁，喜欢前端，执行力，学习能力都棒棒哒！希望能与您合作！挂载在GIT上加载有点慢，望您耐心等待或让我加载一会稍后浏览';
 var darr = Array.from(dstr);
 var dtimer = setInterval(function (){
 if(!darr.length){return clearInterval(dtimer);}
@@ -59,16 +59,16 @@ if(!darr.length){return clearInterval(dtimer);}
       })
     },
     prev_: function () {
-      var _self = this
-      this.X--
-      if (this.X < 0) { this.X = this.num_li - 1 }
-      this.init()
+      var _self = this;
+      this.X--;
+      if (this.X < 0) { this.X = this.num_li - 1; }
+      this.init();
     },
     next_: function () {
-      var _self = this
-      this.X++
+      var _self = this;
+      this.X++;
       if (this.X >= this.num_li) { this.X = 0 }
-      this.init()
+      this.init();
     }
   }
   win.zturn = zturn;
@@ -238,15 +238,10 @@ window.onload = function () {
   }, function () {
     $(this.children).filter('.students_star').slideUp(1000);
   });
-  function fixHeight() {
-    var headerHeight = $("#switcher").height();
-    $("#iframe").attr("height", $(window).height() + "px");
-  }
-  $(window).resize(function () {fixHeight();}).resize();
+  function fixHeight() {var headerHeight = $("#switcher").height();$("#iframe").attr("height", $(window).height() + "px");}$(window).resize(function () {fixHeight();}).resize();
 
-  // setTimeout(function (){var lD = document.getElementById('loadD');lD.style.transform='scale(0)';setTimeout(function (){ document.getElementById('loadD').style.display='none'},1000);},2000);
-document.getElementById('loadD').style.transform='scale(0)';
-setTimeout(function (){ document.getElementById('loadD').style.display='none'},1000);
+document.getElementById('loadD').style.transform='scale(0)';setTimeout(function (){ document.getElementById('loadD').style.display='none'},1000);
+
 }
 
 
