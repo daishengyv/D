@@ -1,10 +1,9 @@
 var dstr = '    您好，我叫代生宇，24岁，坐标北京。欢迎来到我的自我介绍页面，页面自己单独开发，可能有点粗糙，望您通过浏览本网页，能对我有所了解。本人喜欢钻研，不浮躁，喜欢前端，执行力，学习能力都棒棒哒！希望能与您合作！';
 var darr = Array.from(dstr);
 var dtimer = setInterval(function (){
-if(!darr.length){setTimeout(function (){var lD = document.getElementById('loadD');lD.style.transform='scale(0)';setTimeout(function (){ document.getElementById('loadD').style.display='none'},1000);},2000);
-return clearInterval(dtimer); }
+if(!darr.length){return clearInterval(dtimer);}
   var span = document.createElement('span');span.innerHTML = darr.shift();span.style.color = 'rgb(' +~~(Math.random()*255) + ','+ ~~(Math.random()*255)  + ',' + ~~(Math.random()*255)  + ')'; document.getElementById('loadD').firstElementChild.appendChild(span);
-},280);
+},300);
 
 
 /*! modernizr 3.5.0 (Custom Build) | MIT *
@@ -196,11 +195,15 @@ window.onload = function () {
       });
     }
   });
+  $('.Dfilter').on('mousemove',function (){$('#dai').css({ 'box-shadow':'-2px -5px 30px 5px rgba(255,255,255,0.5)'})});
 
-  $('#dai').one('mousemove',function (){
-    this.style['box-shadow'] = '-2px -5px 30px 5px rgba(255,255,255,0.5)';
-    document.addEventListener('mousemove', _dai);
-  });
+  $('.Dfilter').on('mouseout',function (){ $('#dai').css({
+    'transform': 'scale(1) translate(' + 0 + 'px,' + 0 + 'px) rotateX( ' + 0 + 'deg) rotateY(' + 0 + 'deg)',
+    'box-shadow': 'none'
+  });});
+
+
+
 
   $('#dai').hover(function () {
     this.style['box-shadow'] = '-2px -5px 30px 5px rgba(255,255,255,0.5)';
@@ -239,6 +242,11 @@ window.onload = function () {
     var headerHeight = $("#switcher").height();
     $("#iframe").attr("height", $(window).height() + "px");
   }
-  $(window).resize(function () {fixHeight();}).resize();}
+  $(window).resize(function () {fixHeight();}).resize();
+
+  // setTimeout(function (){var lD = document.getElementById('loadD');lD.style.transform='scale(0)';setTimeout(function (){ document.getElementById('loadD').style.display='none'},1000);},2000);
+document.getElementById('loadD').style.transform='scale(0)';
+setTimeout(function (){ document.getElementById('loadD').style.display='none'},1000);
+}
 
 
